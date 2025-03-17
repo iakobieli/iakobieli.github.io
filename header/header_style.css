@@ -1,0 +1,23 @@
+		details.header>summary {
+ 
+		list-style: none;
+		}
+		.header summary::-webkit-details-marker {
+		  display: none
+		}
+
+		details.header summary::after {
+		  content: ' ▲';
+		}
+		details[open].header summary:after {
+		  content: " ▼";
+		}
+		
+		
+		.header {
+			
+			  max-width: 100%;
+			  height: auto;
+			  
+		}
+		
