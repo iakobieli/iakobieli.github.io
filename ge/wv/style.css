@@ -1,0 +1,15 @@
+.go-top-btn {
+  position: fixed;
+  bottom: 35px;
+  left: 35px;
+  cursor: pointer;
+  height: 54px;
+  width: 54px;
+  display: none;
+  background-image: url("go-top-btn.png");
+  background-size: cover;
+  border: 0px solid;
+  border-spacing: 0px;
+  
+}
+
