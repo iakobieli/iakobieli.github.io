@@ -14,6 +14,11 @@ h2{
   src: url('HelveticaNeueLTGEO55Roman.woff2') format('woff2');
 }
 
+@font-face {
+    font-family: 'times';
+    src: url('times.ttf') format('truetype');
+}
+
 :root{
 	
 }
