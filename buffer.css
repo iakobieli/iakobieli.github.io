@@ -1,0 +1,79 @@
+@font-face {
+  font-family: 'HelveticaNeueLTGEO55Roman';
+  src: url('HelveticaNeueLTGEO55Roman.woff2') format('woff2');
+}
+
+body {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+    margin: 0; 
+		background-image: linear-gradient(
+		to right,
+		var(--color-primary),
+		var(--color-primary)
+	);
+	background-position: 50% 50%;
+}
+		
+		.grey-box {
+  background-color: #f9f9f9;
+  border: 1px solid rgba(211, 211, 211, 1);
+  width: 300px;
+  height: 74px;
+  position: relative;
+  font-family: HelveticaNeueLTGEO55Roman;
+}
+
+		.white-box {
+  background-color: #ffffff;
+  border: 2px solid rgba(68, 71, 70, 1);
+  width: 26px;
+  height: 26px;
+  position: absolute;
+  top: 40%;
+  left: 20%;
+  transform: translate(-25%, -25%);
+}
+
+		.text {
+  font-size: 14px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.icon{
+	width: 24px;
+	height: 24px;
+	background-image: url("secondary.png");
+	background-size: cover;
+	position: absolute;
+	top: 3%;
+	right: 3%;
+	
+}
+
+:root{
+	--color-primary: #ffffff;
+	--color-secondary: #BFFF90;
+	
+}
+
+.secondary-theme{
+	--color-primary: #BFFF90;
+	animation: animate 0.1s ease-in-out 1 forwards;
+	
+}
+
+@keyframes animate{
+	0%{
+		background-size: 0% 0%;
+	}
+	100%{
+		background-size: 100% 100%;
+	}
+	
+}
