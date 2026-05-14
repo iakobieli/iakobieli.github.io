@@ -1,0 +1,72 @@
+@font-face {
+  font-family: 'HelveticaNeueLTGEO55Roman';
+  src: url('HelveticaNeueLTGEO55Roman.woff2') format('woff2');
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  font-family: HelveticaNeueLTGEO55Roman;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 140px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -75px;
+  opacity: 0;
+  transition: opacity 0.3s;
+  font-family: HelveticaNeueLTGEO55Roman;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+.button {
+  padding: 15px 25px;
+  font-size: 14px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #141414;
+  background-color: #F6BA2A;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 5px rgb(68, 71, 70);
+  font-family: HelveticaNeueLTGEO55Roman;
+}
+
+.button:hover {background-color: rgb(30,142,62)}
+
+.button:active {
+  background-color: rgb(20 132 52);
+  box-shadow: 0 2px #666;
+  transform: translateY(4px);
+}
+
+.input {
+  visibility: hidden;
+  width: 1px;
+  height: 1px;
+  font-family: HelveticaNeueLTGEO55Roman;
