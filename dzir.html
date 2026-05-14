@@ -8,7 +8,8 @@
 		<title>...</title>
 		<body bgcolor="#F6BA2A">
 		<link rel="stylesheet" href="ge/cssrf.css">
-		
+
+		<link rel="stylesheet" href="email.css">	
 		<link rel="stylesheet" href="header/header_style.css">	
 		<link rel="stylesheet" href="header/legend.css">
 
@@ -24,12 +25,23 @@
 	</head>
 	
 	<body>
-	
+
+		<script src="email.js"></script>
+		
 		<br>
 		<a style="text-decoration: none" href="archeva.html"><p style="color: #141414; font-size:21px"><b>ქართული</b></p></a>
 		<a style="text-decoration: none" href="en/selection.html"><p style="color: #141414; font-size:21px"><b>English</b></p></a>
 		<br>
 		<a href="https://www.youtube.com/@iakobieliAuthed" target="_blank"><img width="157" height="40" alt="youtube-link" src="wiki/ytlogo.png"></a>
+		
+		<br>
+		<input class="input" type="text" value="iakobieli@gmail.com" id="myInput" readonly>
+		<div class="tooltip">
+			<button class="button" onclick="myFunction()" onmouseout="outFunc()">
+			<span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+			iakobieli@gmail.com
+			</button>
+		</div>
 		
 	</body> 
 	
